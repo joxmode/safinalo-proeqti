@@ -45,15 +45,21 @@ body {
   backdrop-filter: blur(5px);
 }
 
-.nav p {
+.nav p,
+.nav a,
+.nav a:visited {
+  display: inline-block;
   font-family: 'Oswald', sans-serif;
   font-size: 1.1rem;
   letter-spacing: 2px;
+  color: var(--paper-text);
+  text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.nav p:hover {
+.nav p:hover,
+.nav a:hover {
   color: var(--villain-orange);
   transform: translateY(-2px);
 }
