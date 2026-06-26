@@ -254,6 +254,25 @@ body {
   overflow: hidden;
 }
 
+.prsn label {
+  cursor: pointer;
+  display: block;
+}
+
+.prsn label p {
+  pointer-events: none;
+}
+
+.prsn input:checked ~ span {
+  max-height: 180px;
+  opacity: 1;
+  margin-top: 12px;
+}
+
+.prsn input:checked + label p {
+  color: var(--villain-orange);
+}
+
 .prsn input {
   display: none;
 }
@@ -354,21 +373,4 @@ body {
 .learn-btn:hover {
   background: var(--villain-orange);
   color: var(--bg-pitch);
-}
-
-@media (max-width: 768px) {
-  .nav {
-    gap: 1.2rem;
-    font-size: 0.9rem;
-  }
-  .anim-sect h1 {
-    font-size: 3.2rem;
-  }
-  .timeline {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .persona {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap");
 
 :root {
   --bg-pitch: #0d0d0f;
@@ -20,17 +20,29 @@
 body {
   background-color: var(--bg-pitch);
   color: var(--paper-text);
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   line-height: 1.6;
   padding-bottom: 100px;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
-  background-size: 24px 24px; 
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 0
+  );
+  background-size: 24px 24px;
 }
 
-::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-track { background: var(--bg-pitch); }
-::-webkit-scrollbar-thumb { background: var(--doom-green); border-radius: 2px; }
-::-webkit-scrollbar-thumb:hover { background: var(--villain-orange); }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-pitch);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--doom-green);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--villain-orange);
+}
 
 .nav {
   display: flex;
@@ -49,7 +61,7 @@ body {
 .nav a,
 .nav a:visited {
   display: inline-block;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.1rem;
   letter-spacing: 2px;
   color: var(--paper-text);
@@ -73,7 +85,7 @@ body {
 
 .anim-sect img {
   border: 4px solid var(--mask-silver);
-  box-shadow: 0 0 30px rgba(30, 86, 49, 0.5); 
+  box-shadow: 0 0 30px rgba(30, 86, 49, 0.5);
   border-radius: 4px;
   max-width: 250px;
   margin-bottom: 1.5rem;
@@ -81,11 +93,13 @@ body {
 }
 
 .anim-sect h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 5rem;
   letter-spacing: 4px;
   color: var(--paper-text);
-  text-shadow: 3px 3px 0px var(--doom-green), 6px 6px 0px var(--bg-panel);
+  text-shadow:
+    3px 3px 0px var(--doom-green),
+    6px 6px 0px var(--bg-panel);
   line-height: 1.1;
 }
 
@@ -120,7 +134,7 @@ body {
   border-bottom: 1px solid #222;
   font-size: 1.05rem;
   text-align: justify;
-  box-shadow: 8px 8px 0px rgba(0,0,0,0.6);
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.6);
   position: relative;
 }
 
@@ -178,7 +192,7 @@ body {
   padding: 1.5rem 0.5rem;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .prsn span {
@@ -189,8 +203,27 @@ body {
   font-size: 0.8rem;
   color: var(--paper-text);
   transition: 0.3s ease;
-  cursor:pointer;
-  overflow:hidden;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.prsn label {
+  cursor: pointer;
+  display: block;
+}
+
+.prsn label p {
+  pointer-events: none;
+}
+
+.prsn input:checked ~ span {
+  max-height: 180px;
+  opacity: 1;
+  margin-top: 12px;
+}
+
+.prsn input:checked + label p {
+  color: var(--villain-orange);
 }
 
 .prsn input {
@@ -198,7 +231,7 @@ body {
 }
 
 .prsn p {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.1rem;
   letter-spacing: 1px;
   color: var(--mask-silver);
@@ -207,7 +240,7 @@ body {
 .prsn:hover {
   border-color: var(--doom-green-bright);
   background: var(--doom-green);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
   transform: scale(1.05);
 }
 
@@ -228,7 +261,7 @@ body {
 .satauri {
   width: 100%;
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 2.2rem;
   letter-spacing: 3px;
   color: var(--paper-text);
@@ -245,8 +278,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow:hidden;
-  transition:0.3s;
+  overflow: hidden;
+  transition: 0.3s;
 }
 
 .card:hover {
@@ -258,9 +291,11 @@ body {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  background-color: #222; 
+  background-color: #222;
   border-bottom: 2px solid var(--doom-green);
-  transition:transform 0.35s ease, filter 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
 }
 
 .card:hover img {
@@ -269,7 +304,7 @@ body {
 }
 
 .card h6 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.05rem;
   margin: 10px 0;
   text-align: center;
@@ -293,11 +328,4 @@ body {
 .learn-btn:hover {
   background: var(--villain-orange);
   color: var(--bg-pitch);
-}
-
-@media (max-width: 768px) {
-  .nav { gap: 1.2rem; font-size: 0.9rem; }
-  .anim-sect h1 { font-size: 3.2rem; }
-  .timeline { flex-direction: column; gap: 0.5rem; }
-  .persona { grid-template-columns: repeat(2, 1fr); }
 }

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Final project for css/html course" />
+    <meta name="keywords" content="project, html, css, scss, music, DOOM" />
+    <meta name="author" content="Saba Jokhadze" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <title>Transmit Wire | MF DOOM</title>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="../index.html">HOME</a>
+      <a href="./about.html">ABOUT US</a>
+      <a href="./services.html">SERVICES</a>
+      <a href="###">NEWS</a>
+      <a href="###">CONTACT</a>
+    </div>
+
+    <main class="contact-container">
+      <div class="terminal-header">
+        <p class="status-pill">● REC // ENCRYPTED CHANNEL 103.4 FM</p>
+        <h1>TRANSMIT WIRE TO THE VILLAIN</h1>
+      </div>
+
+      <div class="contact-box">
+        <div class="contact-info">
+          <h2>// TARGET COORD</h2>
+          
+          <div class="info-group">
+            <span class="label">PRIMARY HIDEOUT:</span>
+            <p>1600 Pennsylvania Avenue NW<br>Washington, D.C. 20500</p>
+          </div>
+
+          <div class="info-group">
+            <span class="label">BURNER LINE (LEGAL):</span>
+            <p>505-842-5662 (Ask for Saul)</p>
+          </div>
+
+          <div class="info-group">
+            <span class="label">SECURE DROP:</span>
+            <p>MF@DOOM.COM</p>
+          </div>
+
+          <div class="info-group">
+            <span class="label">PAGER FREQUENCY:</span>
+            <p>1-800-SNITCHES (Page Madlib)</p>
+          </div>
+        </div>
+
+        
+        <form 
+          class="villain-form" 
+          onsubmit="event.preventDefault(); alert('[TRANSMISSION INTERCEPTED]\n\nThe Supervillain has received your wire. Do not wait by the phone.');"
+        >
+          <div class="form-group">
+            <label for="alias">YOUR ALIAS / STREET NAME</label>
+            <input type="text" id="alias" placeholder="e.g. Viktor Vaughn" required />
+          </div>
+
+          <div class="form-group">
+            <label for="freq">RETURN FREQUENCY (EMAIL)</label>
+            <input type="email" id="freq" placeholder="villain@rhymesayers.net" required />
+          </div>
+
+          <div class="form-group">
+            <label for="reason">NATURE OF BUSINESS</label>
+            <select id="reason">
+              <option>Reporting a Rap Snitch</option>
+              <option>Dropping off Hot Cakes</option>
+              <option>Beat Tape Submission (Cassette Only)</option>
+              <option>General Unresolved Beef</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="bars">MESSAGE (MAX 16 BARS)</label>
+            <textarea id="bars" rows="4" placeholder="Spit your peace..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">[ TRANSMIT WIRE ]</button>
+        </form>
+
+      </div>
+    </main>
+  </body>
+</html>
