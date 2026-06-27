@@ -21,8 +21,7 @@ body {
   background-color: var(--bg-pitch);
   color: var(--paper-text);
   font-family: "Space Mono", monospace;
-  line-height: 1.6;
-  padding-bottom: 100px;
+  line-height: 1.6; 
   background-image: radial-gradient(
     rgba(255, 255, 255, 0.03) 1px,
     transparent 0
@@ -328,4 +327,39 @@ body {
 .learn-btn:hover {
   background: var(--villain-orange);
   color: var(--bg-pitch);
+}
+
+.site-footer {
+  background-color: #050505;
+  border-top: 2px solid var(--doom-green);
+  padding: 3rem 1rem;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 80px;
+  filter: grayscale(100%);
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-links a {
+  font-family: 'Oswald', sans-serif;
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s;
 }

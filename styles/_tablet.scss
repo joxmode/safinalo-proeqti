@@ -1,0 +1,39 @@
+@use "media-queries" as *;
+
+@media #{$tablet} {
+  .nav {
+    gap: 1.5rem;
+  }
+
+  .persona {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .comic-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wide-panel {
+    grid-column: span 2;
+  }
+
+  .feature-panel,
+  .tall-panel {
+    grid-column: span 1;
+  }
+
+  .contact-box {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  .info,
+  .cont,
+  .manifesto-wrapper {
+    width: 85%;
+  }
+}

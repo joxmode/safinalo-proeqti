@@ -1,0 +1,62 @@
+@use "media-queries" as *;
+
+@media #{$mobile} {
+  .nav {
+    gap: 1rem;
+    padding: 1rem;
+
+    a,
+    p {
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .info,
+  .cont,
+  .contact-container,
+  .services-container,
+  .manifesto-wrapper {
+    width: 95%;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+
+  .persona,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card,
+  .service-card {
+    width: 100%;
+  }
+
+  .comic-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .feature-panel,
+  .tall-panel,
+  .wide-panel {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+}

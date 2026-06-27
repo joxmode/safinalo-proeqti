@@ -6,16 +6,16 @@
     <meta name="Description" content="Final project for css/html course" />
     <meta name="keywords" content="project, html, css, scss, music, DOOM" />
     <meta name="author" content="Saba Jokhadze" />
-    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
     <title>Transmit Wire | MF DOOM</title>
   </head>
   <body>
     <div class="nav">
       <a href="../index.html">HOME</a>
-      <a href="./about.html">ABOUT US</a>
+      <a href="./manifesto.html">MANIFESTO</a>
       <a href="./services.html">SERVICES</a>
-      <a href="###">NEWS</a>
-      <a href="###">CONTACT</a>
+      <a href="./gallery.html">GALLERY</a>
+      <a href="./contact.html">CONTACT</a>
     </div>
 
     <main class="contact-container">
@@ -27,10 +27,10 @@
       <div class="contact-box">
         <div class="contact-info">
           <h2>// TARGET COORD</h2>
-          
+
           <div class="info-group">
             <span class="label">PRIMARY HIDEOUT:</span>
-            <p>1600 Pennsylvania Avenue NW<br>Washington, D.C. 20500</p>
+            <p>1600 Pennsylvania Avenue NW<br />Washington, D.C. 20500</p>
           </div>
 
           <div class="info-group">
@@ -49,19 +49,33 @@
           </div>
         </div>
 
-        
-        <form 
-          class="villain-form" 
-          onsubmit="event.preventDefault(); alert('[TRANSMISSION INTERCEPTED]\n\nThe Supervillain has received your wire. Do not wait by the phone.');"
+        <form
+          class="villain-form"
+          onsubmit="
+            event.preventDefault();
+            alert(
+              '[TRANSMISSION INTERCEPTED]\n\nThe Supervillain has received your wire. Do not wait by the phone.',
+            );
+          "
         >
           <div class="form-group">
             <label for="alias">YOUR ALIAS / STREET NAME</label>
-            <input type="text" id="alias" placeholder="e.g. Viktor Vaughn" required />
+            <input
+              type="text"
+              id="alias"
+              placeholder="e.g. Viktor Vaughn"
+              required
+            />
           </div>
 
           <div class="form-group">
             <label for="freq">RETURN FREQUENCY (EMAIL)</label>
-            <input type="email" id="freq" placeholder="villain@rhymesayers.net" required />
+            <input
+              type="email"
+              id="freq"
+              placeholder="villain@rhymesayers.net"
+              required
+            />
           </div>
 
           <div class="form-group">
@@ -76,13 +90,42 @@
 
           <div class="form-group">
             <label for="bars">MESSAGE (MAX 16 BARS)</label>
-            <textarea id="bars" rows="4" placeholder="Spit your peace..."></textarea>
+            <textarea
+              id="bars"
+              rows="4"
+              placeholder="Spit your peace..."
+            ></textarea>
           </div>
 
           <button type="submit" class="submit-btn">[ TRANSMIT WIRE ]</button>
         </form>
-
       </div>
     </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a
+            href="https://tbcbank.ge/ka/tbc-education"
+            targer="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="../images/tbc-logo.png" alt="tbc" />
+          </a>
+        </div>
+
+        <div class="footer-links">
+          <a href="./index.html">HOME</a>
+          <a href="./navbar/manifesto.html">MANIFESTO</a>
+          <a href="./navbar/services.html">SERVICES</a>
+          <a href="./navbar/gallery.html">GALLERY</a>
+          <a href="./navbar/contact.html">CONTACT</a>
+        </div>
+
+        <div class="footer-info">
+          <p>© 2026 VILLAIN OPERATIVES</p>
+          <p>SYSTEM STATUS: ONLINE</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
