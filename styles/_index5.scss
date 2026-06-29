@@ -45,9 +45,9 @@ body {
 
 .nav {
   display: flex;
-  justify-content: center;
-  gap: 3rem;
-  padding: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
   background: rgba(13, 13, 15, 0.95);
   border-bottom: 2px solid var(--doom-green);
   position: sticky;
@@ -56,9 +56,31 @@ body {
   backdrop-filter: blur(5px);
 }
 
+#menu-toggle,
+.burger {
+  display: none;
+}
+
+.nav-logo {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  text-decoration: none;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+}
+
 .nav p,
-.nav a,
-.nav a:visited {
+.nav-links a,
+.nav-links a:visited {
   display: inline-block;
   font-family: "Oswald", sans-serif;
   font-size: 1.1rem;
@@ -70,7 +92,7 @@ body {
 }
 
 .nav p:hover,
-.nav a:hover {
+.nav-links a:hover {
   color: var(--villain-orange);
   transform: translateY(-2px);
 }
@@ -79,10 +101,10 @@ body {
   max-width: 800px;
   margin: 4rem auto;
   padding: 3rem;
-  background-color: #111; 
+  background-color: #111;
   border: 1px solid #333;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  font-family: 'Courier New', Courier, monospace; 
+  font-family: "Courier New", Courier, monospace;
 }
 
 .document-header {
@@ -112,12 +134,18 @@ body {
 .glitch-line {
   border: none;
   height: 2px;
-  background: repeating-linear-gradient(90deg, #ff3333, #ff3333 10px, transparent 10px, transparent 20px);
+  background: repeating-linear-gradient(
+    90deg,
+    #ff3333,
+    #ff3333 10px,
+    transparent 10px,
+    transparent 20px
+  );
   margin-top: 10px;
 }
 
 .manifesto-content h2 {
-  color: var(--villain-orange, #ff8c00); 
+  color: var(--villain-orange, #ff8c00);
   margin-top: 2.5rem;
   border-bottom: 1px solid #444;
   padding-bottom: 5px;
@@ -129,8 +157,8 @@ body {
 }
 
 .redacted {
-  background-color: #fff; 
-  color: #fff; 
+  background-color: #fff;
+  color: #fff;
   padding: 0 4px;
   cursor: crosshair;
   transition: all 0.3s ease;
@@ -138,14 +166,20 @@ body {
 
 .redacted:hover {
   background-color: transparent;
-  color: #ff3333; 
+  color: #ff3333;
   text-shadow: 0 0 5px rgba(255, 51, 51, 0.5);
 }
 
 @keyframes pulse {
-  0% { opacity: 1; }
-  50% { opacity: 0.5; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .site-footer {
@@ -166,7 +200,7 @@ body {
 }
 
 .footer-logo img {
-  width: 80px; 
+  width: 80px;
   filter: grayscale(100%);
 }
 
@@ -176,7 +210,7 @@ body {
 }
 
 .footer-links a {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #666;
   text-decoration: none;
   font-size: 0.9rem;
